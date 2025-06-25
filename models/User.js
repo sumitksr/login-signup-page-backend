@@ -1,5 +1,6 @@
-const moongoose = require('mongoose');
-const userSchema = new moongoose.Schema({
+const mongoose = require('mongoose');
+
+const userSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true,
@@ -16,11 +17,10 @@ const userSchema = new moongoose.Schema({
         required: true,
     },
     role: {
-
         type: String,
-        // mtlb input mai yeh sirf yahi tin chize lega
-        enum: ['student', 'admin','visitor'],
-        default: 'user',
+        enum: ['student', 'admin', 'visitor'], 
+        default: 'student',
     },
-}, { timestamps: true });
-module.exports = moongoose.model('user', userSchema);
+});
+
+module.exports = mongoose.model('User', userSchema);
