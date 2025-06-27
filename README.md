@@ -109,4 +109,4 @@ Here are two sample users you can use for testing (replace passwords as needed):
 
 ---
 
-  >> Happy Coding! 🎉 
+  > Happy Coding! 🎉 
